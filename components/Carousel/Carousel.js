@@ -3,12 +3,18 @@ class Carousel {
         this.container = container;
         this.left = container.querySelector('.left-button');
         this.right = container.querySelector('.right-button');
-        this.images = container.querySelectorAll('img');
-        this.left.addEventListener('click', () => this.next());
-        this.right.addEventListener('click', () => this.next());
+        this.currentIndex = 0;
+        window.addEventListener('load', () => this.defaultImg())
+        this.left.addEventListener('click', () => this.nextImage());
+        this.right.addEventListener('click', () => this.nextImage());
     }
-    next() {
-
+    defaultImg() {
+        let images = this.container.querySelectorAll('img');
+        images[this.currentIndex].style.display = 'flex';
+    }
+    nextImage() {
+        let images = this.container.querySelectorAll('img');
+        return this.currentIndex = images[1].dataset.img;
     }
 }
 

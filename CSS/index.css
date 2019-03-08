@@ -58,10 +58,6 @@ body {
     display: flex;
 }
 
-.invisible {
-    display: none;
-}
-
 .top-bar {
     width: 100%;
     display: flex;
@@ -355,4 +351,5 @@ body {
 
 .carousel img {
     width: 100%;
+    display: none;
 }
