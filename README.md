@@ -31,14 +31,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    DOM stands for Document Object Model. It allows JavaScript to access HTML/XML elements as objects.
 
 2. What is an event?
+    An event is an action made by the user OR the browser.
 
 3. What is an event listener?
+    An event listener waits for an event to be made, then initiates a fre-defined callback function (or an anonymous function).
 
 4. Why would we convert a NodeList into an Array?
+    A NodeList only has access to the `.forEach()` array method. Converting to an Array would enable all Array methods to be used.
 
 5. What is a component?
+    A component is a coding format that can be re-used to make what would normally be a headache easier.
 
 ### Git Set up
 
